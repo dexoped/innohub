@@ -39,16 +39,16 @@ export const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">Incubators</NavLinks>
+              <NavLinks to="About">Incubators</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover">Events</NavLinks>
+              <NavLinks to="discover">Resources</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="services">InnovationHub</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Resources">Resources</NavLinks>
+              <NavLinks to="Events">Events</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="Legalities">Legalities</NavLinks>
@@ -56,9 +56,7 @@ export const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks to="CrowdFund">Crowdfunding</NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks to="signup">SignUp</NavLinks>
-            </NavItem>
+            
           </NavMenu>
           <NavBtn>
             <NavBtnLink to="/signin">Sign In</NavBtnLink>

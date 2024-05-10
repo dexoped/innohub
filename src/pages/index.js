@@ -17,6 +17,11 @@ export const Home = () => {
     setIsOpen(!isOpen);
   };
 
+  // Function to handle click on "Events" button
+  const handleEventsClick = () => {
+    window.location.href = "https://unstop.com/hackathons/graph-e-thon-2024-graphic-era-university-949350"; // Replace this with the desired URL
+  };
+
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -24,29 +29,41 @@ export const Home = () => {
       <HeroSection />
       <InfoSection
         image={Image1}
-        id="about"
-        subtitle="Mauris tempor interdum"
-        title="Proin condimentum diam"
-        text="In luctus nibh nec metus placerat consectetur. Maecenas odio mi, ullamcorper at porta non, egestas vitae velit. Donec lacinia porta tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec arcu nec diam posuere tincidunt. Nulla dignissim enim id nibh luctus, ullamcorper sagittis eros semper."
+        id="About"
+        subtitle="Incubators"
+        title="Providing Innovation Space"
+        text="At InoHub, we specialize in fostering innovation through our cutting-edge innovation cells. Designed to be dynamic and adaptable, our innovation cells are the driving force behind groundbreaking ideas and transformative solutions."
         btnText="Start today"
       />
       <InfoSectionLight
         image={Image2}
         id="discover"
-        subtitle="Morbi iaculis enim"
-        title="In hac habitasse"
-        text="Phasellus porta sagittis sapien. Nam quis odio eu libero tempus rutrum. Suspendisse nec eros eget ex cursus rhoncus. Proin at velit quis ante pretium porta. Quisque pulvinar, elit et tincidunt ultricies, mauris odio luctus risus, vitae auctor elit risus a tortor. Nunc pulvinar purus id est rutrum vulputate. Mauris venenatis lectus vel nisi semper scelerisque."
+        subtitle="Resources"
+        title="Providing Raw Resources"
+        text="Dive into innovation with a diverse array of high-quality raw materials provided by InoHub. Our Innovation Materials offering is tailored to fuel your creative process, enabling you to prototype, experiment, and iterate with ease."
         btnText="Explore"
       />
       <Services />
+     
       <InfoSectionLight
         image={Image1}
-        id="#"
-        subtitle="Duis et lectus accumsan"
-        title="Quisque dui justo"
-        text="Cras et ligula eget neque ornare tempor et vitae est. Duis et lectus accumsan, mollis dui a, finibus metus. Quisque dui justo, ullamcorper eget luctus id, consectetur eget nunc. In quis arcu erat. Morbi consequat imperdiet lorem, porta porta erat hendrerit vel. Aliquam dignissim purus at dolor posuere euismod."
-        btnText="Read more"
+        id="Events"
+        subtitle="Events"
+        title="Updates on events"
+        text="InnoHub's Events feature is a dynamic platform designed to empower and amplify the potential of startups. Through a diverse array of seminars, festivals, and hackathons, we provide a vibrant space for budding entrepreneurs to showcase their projects, exchange ideas, and forge valuable connections within the startup ecosystem."
+        btnText="Events" 
+        onClick={handleEventsClick} // Adding onClick event handler
       />
+ <InfoSection
+        image={Image1}
+        id="Legalities"
+        subtitle="Legalities"
+        title="Know Your Licence"
+        text="Our Legalities feature offers comprehensive resources and expert advice to help startups identify the most suitable licenses for their specific industry and business model."
+        btnText="Know More"
+      />
+
+
       <Footer />
     </>
   );

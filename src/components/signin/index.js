@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   SigninContainer,
   SigninWrapper,
@@ -8,6 +8,12 @@ import {
 import { Button } from "../ButtonElements";
 
 const Signin = () => {
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover);
+  };
+
   return (
     <SigninContainer>
       <SigninWrapper className="py-5 px-5">
@@ -18,7 +24,7 @@ const Signin = () => {
             <SigninInput type="text" placeholder="Enter your email..." />
             <SigninP>Password</SigninP>
             <SigninInput type="password" placeholder="Enter your password..." />
-            <Button className="mt-5 mb-3">Continue</Button>
+            <Button className="mt-5 mb-3" to="/"  onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">Continue</Button>
           </form>
           <p className="center-align">
             Forgot your password? <a href="/">Reset here</a>

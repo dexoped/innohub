@@ -27,8 +27,7 @@ const HeroSection = () => {
       <HeroContent>
         <h1 className="h1-hero">Reaching Goals Made Easy</h1>
         <p className="hero-text">
-          Sign up today and recieve $250 in credit for your next sucessfull
-          project.
+        
         </p>
         <HeroBtnWrapper>
           <ButtonR to="/signin" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">

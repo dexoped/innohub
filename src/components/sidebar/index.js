@@ -9,7 +9,7 @@ export const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}>
+                    <SidebarLink to="Inncubators" onClick={toggle}>
                         About
                     </SidebarLink>
                     <SidebarLink to="discover" onClick={toggle}>
