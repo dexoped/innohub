@@ -44,7 +44,8 @@ const Footer = () => {
         </div>
         <div className="row">
           <div className="col-12 mt-5 ">
-            <h1 className="logo-text gray-text center-align">- syntec -</h1>
+            <h1 className="logo-text gray-text center-align">- InoHub -</h1>
+            <a href="http://127.0.0.1:5500/LMS-Portal-main/SIH%202Project/home.html" >Visit Site</a>
           </div>
         </div>
       </FooterWrapper>
